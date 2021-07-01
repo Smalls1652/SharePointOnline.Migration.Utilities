@@ -1,5 +1,5 @@
 $scriptRoot = $PSScriptRoot
 
-$moduleLibPath = Join-Path -Path $scriptRoot -ChildPath "SharePointOnline.Migration.Utilities\SharePointOnline.Migration.Utilities.Lib.dll"
+$libPath = Join-Path -Path $scriptRoot -ChildPath "src\SharePointOnline.Migration.Utilities.Lib\bin\Release\net5.0\publish\SharePointOnline.Migration.Utilities.Lib.dll"
 
-[System.Reflection.Assembly]::LoadFile($moduleLibPath)
+[System.Reflection.Assembly]::LoadFile($libPath)
